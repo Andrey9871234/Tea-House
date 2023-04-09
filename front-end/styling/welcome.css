@@ -1,0 +1,110 @@
+.hero {
+  position: relative;
+  height: 500px;
+  background-image: url('../assets/welcome.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  font-family: 'Helvetica Neue', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.hero__subtitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  font-family: 'Helvetica Neue', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.hero__promo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff4136;
+  font-family: 'Helvetica Neue', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.hero__cta {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background-color: #4a36ff;
+  border-radius: 2rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero__cta:hover {
+  background-color: #85144b;
+}
+
+
+
+.info__details {
+  font-family: Papyrus, sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  color: darkred;
+  text-decoration: underline;
+}
+
+
+
+
+.info__reviews {
+  background-color: #b99aff; /* blue-magenta background */
+  padding: 20px;
+  text-align: center;
+}
+
+.info__review-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info__review-item {
+  margin-bottom: 20px;
+}
+
+.info__review-name {
+  font-style: italic; /* italic style for reviewer name */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.info__review-text {
+  font-family: cursive; /* handwritten-like font */
+  margin: 0;
+}
+
+.info__review-title {
+  font-family: 'Pacifico', cursive; /* a fun handwritten font */
+  color: white;
+  font-size: 32px;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.3); /*a shadow effect */
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
