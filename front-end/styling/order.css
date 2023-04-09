@@ -8,38 +8,6 @@
     padding: 0;
   }
   
-  header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .navbar__menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar__menu li {
-    margin-left: 1rem;
-  }
-  
-  .navbar__menu li:first-child {
-    margin-left: 0;
-  }
-  
-  .navbar__menu a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-  }
   
   .order-form {
     margin: 2rem auto;
