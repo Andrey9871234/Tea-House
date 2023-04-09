@@ -1,47 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Your Tea</title>
-    <link rel="stylesheet" href="welcome.css">
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Order Now</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </nav>
+<html>
+<head>
+	<title>Your Tea - Welcome</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="welcome.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 
-    <div class="hero-image">
-      <div class="hero-text">
-        <h1>Welcome to Your Tea</h1>
-        <p>Relax and Enjoy Our Delicious Teas and Treats</p>
-        <p><strong>Today Only:</strong> 50% off on Green Tea and 2 Croissants</p>
-        <button>Learn More</button>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="navbar__logo">
+				<img src="logo.jpg" alt="Your Tea logo">
+			</div>
+			<ul class="navbar__menu">
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">Order Now</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero">
+      <div class="hero__text">
+        <h1 class="hero__title">Welcome to Your Tea</h1>
+        <p class="hero__subtitle">Relax and Enjoy Our Delicious Teas and Treats</p>
+        <p class="hero__promo">Only today: 50% discount on green tea and 2 croissants</p>
+        <a class="hero__cta" href="#">See Our Menu</a>
       </div>
-    </div>
+    </section>
+    
 
-    <div class="info-section">
-      <img src="your-tea-logo.png" alt="Your Tea Logo" />
-      <h2>Your Tea</h2>
-      <p>Sararie 23, Iasi</p>
-      <p>Open every day from 7am to 10pm</p>
-      <p>23 seats</p>
-      <h3>Reviews</h3>
-      <ul>
-        <li>"The best tea in town!" - Jane Doe</li>
-        <li>"Lovely atmosphere and friendly staff." - John Smith</li>
-      </ul>
-    </div>
+		<section class="info">
+			<div class="info__details">
+        <h2 class="info__title">Your Tea</h2>
+        <p class="info__address">Sararie 23, Iasi</p>
+        <p class="info__hours">Open every day from 7am to 10pm</p>
+        <p class="info__seating">23 seats</p>
+      </div>
+			<div class="info__reviews">
+				<h3 class="info__review-title">Reviews</h3>
+				<ul class="info__review-list">
+					<li class="info__review-item">
+						<p class="info__review-name">Ana Maria</p>
+						<p class="info__review-text">"I loved the green tea here, it was so refreshing!"</p>
+					</li>
+					<li class="info__review-item">
+						<p class="info__review-name">Mihai Popescu</p>
+						<p class="info__review-text">"Great place to relax and enjoy some tea and pastries."</p>
+					</li>
+					<li class="info__review-item">
+						<p class="info__review-name">Cristina Radu</p>
+						<p class="info__review-text">"The ambiance is cozy and welcoming, I will definitely come back!"</p>
+					</li>
+					<li class="info__review-item">
+						<p class="info__review-name">Andrei Vlad</p>
+						<p class="info__review-text">"The croissants are to die for, I highly recommend them!"</p>
+					</li>
+					<li class="info__review-item">
+						<p class="info__review-name">Maria Ion</p>
+						<p class="info__review-text">"The tea selection is amazing, I always find something new to try!"</p>
+					</li>
+				</ul>
+		
 
+    </section>
+
+    <!-- Footer -->
     <footer>
-      <p>Copyright &copy; 2023 Your Tea@.
-      All rights reserved.</p>
+      <p>Contact Us: <a href="mailto:contact@yourtea.com">contact@yourtea.com</a></p>
+      <p>Follow Us: <a href="https://www.instagram.com/yourtea">Instagram</a></p>
+      <p>&copy; 2023 Your Tea. All Rights Reserved.</p>
     </footer>
   </body>
 </html>
+
