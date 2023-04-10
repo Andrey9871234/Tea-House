@@ -12,6 +12,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  background: rgba(68, 226, 81, 0.4);
+  border-radius: 20%;
 }
 
 .hero__title {
@@ -33,7 +35,7 @@
 .hero__promo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ff4136;
+  color: #ff0000;
   font-family: 'Helvetica Neue', sans-serif;
   margin-bottom: 2rem;
 }

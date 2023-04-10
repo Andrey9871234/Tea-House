@@ -33,7 +33,11 @@
     margin-top: 0;
     text-align: center;
   }
-  
+
+  .order-details{
+  display: inline-block;
+  text-align: left;
+  }
 
 
   footer {

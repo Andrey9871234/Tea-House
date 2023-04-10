@@ -1,9 +1,4 @@
-* {
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
-  body {
+    body {
     background-color: rgb(22, 19, 184);
     background-image: url('../assets/welcome.jpg');
   }
@@ -13,8 +8,12 @@
     margin: 2rem auto;
     max-width: 800px;
     padding: 2rem;
-    background-color: #fdff81;
+    border-radius: 10%;
+    background-color: rgba(122, 250, 165, 0.4);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .order-form:hover{
+    background-color: rgb(93, 243, 143);
   }
   
   .order-form h2 {
@@ -29,6 +28,7 @@
   
   legend {
     font-weight: bold;
+    padding: 2%;
   }
   
   label {
