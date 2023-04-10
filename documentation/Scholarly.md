@@ -4,7 +4,7 @@ IEEE System Requirements Specification Template
 # Software Requirements Specification
 ## For  <project name>
 Version 1.0 approved
-Prepared by <author>
+Prepared by <Andrei>
 <organization>
 <date created>
 
@@ -63,7 +63,7 @@ The document follows the IEEE System Requirements Specification Template for con
 The intended audience of the IEEE System Requirements Specification for the Your Tea website includes professors, software developers and anyone involved in the development, maintenance, or evaluation of the website. Reading suggestions include understanding of software development and website design principles, knowledge of the requirements gathering process, and familiarity with the specific needs and goals of the Your Tea website.
 ### 1.4 Product Scope
 The product scope of the Your Tea website is to provide an online platform for customers to browse and order tea products from the comfort of their homes. The website will offer a variety of tea products with detailed descriptions, prices, and quantities available. Customers will be able to create an account, add items to their cart, and securely checkout with various payment options. Additionally, the website will provide information about the company and its history, as well as a contact form for customer inquiries.
-### 1.5 References
+
 
 
 ## Overall Description
@@ -108,34 +108,90 @@ As a web-based application, Your Tea website will communicate with its users thr
 ## System Features
 This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.
 ### 4.1 System Feature 1
-Don’t really say “System Feature 1.” State the feature name in just a few words.
-4.1.1   Description and Priority
- Provide a short description of the feature and indicate whether it is of High, Medium, or Low priority. You could also include specific priority component ratings, such as benefit, penalty, cost, and risk (each rated on a relative scale from a low of 1 to a high of 9).
-4.1.2   Stimulus/Response Sequences
- List the sequences of user actions and system responses that stimulate the behavior defined for this feature. These will correspond to the dialog elements associated with use cases.
-4.1.3   Functional Requirements
- Itemize the detailed functional requirements associated with this feature. These are the software capabilities that must be present in order for the user to carry out the services provided by the feature, or to execute the use case. Include how the product should respond to anticipated error conditions or invalid inputs. Requirements should be concise, complete, unambiguous, verifiable, and necessary. Use “TBD” as a placeholder to indicate when necessary information is not yet available.
- 
- Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind.
+Feature Name: Search and Choose Tea from Menu.
 
-### 4.2 System Feature 2 (and so on)
+Description: This feature allows users to search and choose from a wide range of tea options available on the website. The user can search for a particular type of tea using keywords or browse through the menu categories. Once the user has selected a tea, they can view its description and add it to their cart. This feature ensures a smooth and easy selection process for the user.
+4.1.1   Description and Priority
+ Feature Name: Search and Choose from Menu
+
+Description: This feature will allow users to search for tea items and choose from a menu of available options. Users will be able to filter their search by tea type, ingredients, and other parameters.
+
+Priority: High
+
+Benefit: This feature will greatly enhance the user experience by providing an easy and intuitive way for users to find and select their desired tea items.
+
+Penalty: Not having this feature could result in frustration and confusion for users, leading to decreased satisfaction and potentially lost sales.
+
+Cost: The cost of implementing this feature is relatively low, as it primarily involves designing and integrating a user-friendly search and menu interface.
+
+Risk: The risk of implementing this feature is relatively low, as it has become a standard expectation for e-commerce websites to have search and menu functionality. However, there may be some minor technical challenges in integrating the search and menu with the existing website architecture.
+4.1.2   Stimulus/Response Sequences
+ For the "Search and Choose from Menu" feature, the stimulus/response sequences would be:
+
+User clicks on the search bar and enters a query for the desired item.
+System displays a list of menu items that match the search query.
+User selects an item from the list.
+System displays the selected item's details, including name, description, price, and any customization options.
+User selects the desired customization options, if any.
+System adds the item to the user's order.
+User continues to browse the menu or proceeds to checkout
+4.1.3   Functional Requirements
+Feature Name: Search and Choose from Menu
+
+Functional Requirements:
+
+The system shall provide a search bar for users to input keywords to search for specific tea items.
+The system shall display a menu of tea items that match the user’s search query.
+The system shall allow users to browse the menu of tea items by category, such as green tea, black tea, and herbal tea.
+The system shall display the name, price, and description of each tea item in the menu.
+The system shall allow users to add a tea item to their cart by clicking on the corresponding “Add to Cart” button.
+The system shall display an error message if the user inputs an invalid search query.
+The system shall display an error message if the user attempts to add an item to their cart without specifying the quantity.
+The system shall allow users to adjust the quantity of each tea item in their cart before submitting their order.
+The system shall display the total cost of the items in the user’s cart.
+The system shall provide a “Checkout” button for users to submit their order.
+The system shall display an error message if the user attempts to checkout without specifying a valid delivery address.
+The system shall display a confirmation message with the details of the order, including the estimated delivery time and the seats allocated for the user, after the user successfully submits their order.
+ 
+
 
 ## Other Nonfunctional Requirements
 ### 5.1 Performance Requirements
-If there are performance requirements for the product under various circumstances, state them here and explain their rationale, to help the developers understand the intent and make suitable design choices. Specify the timing relationships for real time systems. Make such requirements as specific as possible. You may need to state performance requirements for individual functional requirements or features.
+Response time for all user interactions should be less than 2 seconds under normal load conditions.
+The website should be able to handle up to 1000 concurrent users at any given time.
+The website should be able to handle a peak load of up to 5000 users without experiencing any downtime or significant degradation in performance.
+The website should be able to handle a high volume of orders and payment transactions without any errors or delays.
+The website should be optimized for fast page load times and should aim to deliver a fully rendered page in under 3 seconds.
 ### 5.2 Safety Requirements
-Specify those requirements that are concerned with possible loss, damage, or harm that could result from the use of the product. Define any safeguards or actions that must be taken, as well as actions that must be prevented. Refer to any external policies or regulations that state safety issues that affect the product’s design or use. Define any safety certifications that must be satisfied.
+Since the Your Tea website is not a safety-critical system, there are no safety requirements that need to be addressed.
 ### 5.3 Security Requirements
-Specify any requirements regarding security or privacy issues surrounding use of the product or protection of the data used or created by the product. Define any user identity authentication requirements. Refer to any external policies or regulations containing security issues that affect the product. Define any security or privacy certifications that must be satisfied.
+Secure data transmission: The website must use HTTPS to encrypt data transmission between the user's browser and the server to ensure that user data is protected during transmission.
+Compliance with data protection regulations: The website must comply with all relevant data protection regulations to ensure the privacy and security of user data. This includes regulations such as GDPR and CCPA.
+User data access and deletion: The website should provide users with the ability to access and delete their personal data.
 ### 5.4 Software Quality Attributes
-Specify any additional quality characteristics for the product that will be important to either the customers or the developers. Some to consider are: adaptability, availability, correctness, flexibility, interoperability, maintainability, portability, reliability, reusability, robustness, testability, and usability. Write these to be specific, quantitative, and verifiable when possible. At the least, clarify the relative preferences for various attributes, such as ease of use over ease of learning.
+Usability: The website should be easy to use and navigate for users with varying levels of technical expertise. Users should be able to quickly and easily place orders and find relevant information.
+Reliability: The website should be available and responsive at all times to prevent any loss of clients.
+Security: The website should be designed to protect user data and prevent unauthorized access. This includes implementing secure login processes and encrypting sensitive information such as credit card details.
+
 ### 5.5 Business Rules
 List any operating principles about the product, such as which individuals or roles can perform which functions under specific circumstances. These are not functional requirements in themselves, but they may imply certain functional requirements to enforce the rules.
 
 ## Other Requirements
 Define any other requirements not covered elsewhere in the SRS. This might include database requirements, internationalization requirements, legal requirements, reuse objectives for the project, and so on. Add any new sections that are pertinent to the project.
 ### Appendix A: Glossary
-Define all the terms necessary to properly interpret the SRS, including acronyms and abbreviations. You may wish to build a separate glossary that spans multiple projects or the entire organization, and just include terms specific to a single project in each SRS.
+Your Tea website: A web application designed to provide an online platform for customers to order tea products and access information related to tea.
+SRS: System Requirements Specification - a document that describes the features, functionalities, and characteristics of a software system that is being developed.
+IEEE: Institute of Electrical and Electronics Engineers - a professional organization that develops standards for the engineering and development of software and other technologies.
+UI: User Interface - the visual and interactive components of a software system that a user interacts with to perform tasks and access information.
+UX: User Experience - the overall experience a user has while interacting with a software system, including the ease of use, functionality, and satisfaction with the product.
+HTML: Hypertext Markup Language - a standard markup language used for creating web pages and applications.
+CSS: Cascading Style Sheets - a language used for describing the presentation and styling of web pages and applications.
+API: Application Programming Interface - a set of protocols and tools used for building software applications and enabling communication between different systems or applications.
+HTTPS: Hypertext Transfer Protocol Secure - a secure version of the HTTP protocol used for secure communication over the internet.
+SSL: Secure Sockets Layer - a security protocol used for establishing encrypted links between web servers and browsers to protect sensitive data.
+SQL: Structured Query Language - a programming language used for managing and manipulating relational databases.
+CRM: Customer Relationship Management - a strategy used for managing interactions with customers and improving customer relationships.
+CMS: Content Management System - a software application used for managing the creation and modification of digital content.
 ### Appendix B: Analysis Models
 Optionally, include any pertinent analysis models, such as data flow diagrams, class diagrams, state-transition diagrams, or entity-relationship diagrams.
 ### Appendix C: To Be Determined List
