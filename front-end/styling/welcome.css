@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  height: 500px;
+  height: 75vh;
   background-image: url('../assets/welcome.jpg');
   background-size: cover;
   background-position: center;
@@ -17,7 +17,7 @@
 .hero__title {
   font-size: 4rem;
   font-weight: bold;
-  color: white;
+  color: green;
   font-family: 'Helvetica Neue', sans-serif;
   margin-bottom: 0.5rem;
 }
@@ -25,7 +25,7 @@
 .hero__subtitle {
   font-size: 2rem;
   font-weight: bold;
-  color: white;
+  color: green;
   font-family: 'Helvetica Neue', sans-serif;
   margin-bottom: 2rem;
 }
@@ -54,8 +54,6 @@
   background-color: #85144b;
 }
 
-
-
 .info__details {
   font-family: Papyrus, sans-serif;
   font-size: 1.2em;
@@ -63,9 +61,6 @@
   color: darkred;
   text-decoration: underline;
 }
-
-
-
 
 .info__reviews {
   background-color: #b99aff; /* blue-magenta background */
