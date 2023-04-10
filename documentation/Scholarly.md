@@ -4,7 +4,7 @@ IEEE System Requirements Specification Template
 # Software Requirements Specification
 ## For  <project name>
 Version 1.0 approved
-Prepared by <Andrei>
+Prepared by Andrei
 <organization>
 <date created>
 
