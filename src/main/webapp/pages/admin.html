@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin add item Form</title>
+	<link rel="stylesheet" type="text/css" href="../styling/admin.css">
+    <link rel="stylesheet" type="text/css" href="../styling/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+	
+	<main>
+		<section class="order-form">
+			<h2>Item Form</h2>
+			<form>
+				<fieldset>
+					<legend>Item information</legend>
+					<label for="name">Title:</label>
+					<input type="text" id="name" name="name" required>
+					
+					<label for="description">Description:</label>
+					<textarea type="text" id="description" name="description" required></textarea>
+					
+					<label for="type">Type:</label>
+					<input type="type" id="type" name="type" required>
+
+                    <label for="image">Image:</label>
+                    <input type="file" id="file" name="file" required>
+
+                    <label for="price">Price:</label>
+                    <input id="price" name="price" required>
+				</fieldset>
+				</a><button type="submit" >Submit Item</button>
+			</form>
+		</section>
+	</main>
+	
+</body>
+</html>
