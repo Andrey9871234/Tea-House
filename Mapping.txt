@@ -1,0 +1,38 @@
+Welcome page (/intrare)
+
+Menu page: /meniu
+Preferences pages: /preferinta/ceai/ and /preferinta/ceai?de=tei
+Order tea page: /order/tea/?without=sugar
+Payment page: /note
+Exit page: /exit
+Menu page (/meniu)
+
+Welcome page: /intrare
+Preferences pages: /preferinta/ceai/ and /preferinta/ceai?de=tei
+Order tea page: /order/tea/?without=sugar
+Payment page: /note
+Exit page: /exit
+Preferences pages (/preferinta/ceai/ and /preferinta/ceai?de=tei)
+
+Welcome page: /intrare
+Menu page: /meniu
+Order tea page: /order/tea/?without=sugar
+Payment page: /note
+Exit page: /exit
+Order tea page (/order/tea/?without=sugar)
+
+Welcome page: /intrare
+Menu page: /meniu
+Preferences pages: /preferinta/ceai/ and /preferinta/ceai?de=tei
+Payment page: /note
+Exit page: /exit
+Payment page (/note)
+
+Welcome page: /intrare
+Menu page: /meniu
+Preferences pages: /preferinta/ceai/ and /preferinta/ceai?de=tei
+Order tea page: /order/tea/?without=sugar
+Exit page: /exit
+Exit page (/exit)
+
+Welcome page: /intrare
