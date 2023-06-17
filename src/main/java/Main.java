@@ -33,20 +33,20 @@ public class Main {
 
         // Test addUser()
         User newUser = new User();
-        newUser.setUsername("JohnDoe");
-        newUser.setEmail("john.doe@example.com");
+        newUser.setUsername("PopescuIon");
+        newUser.setEmail("popescu.ion@example.com");
         newUser.setPassword("password");
         newUser.setAdmin(false);
         userDAO.addUser(newUser);
         System.out.println("Added user: " + newUser);
 
         // Test updateUser()
-        newUser.setEmail("john.doe.updated@example.com");
+        newUser.setEmail("popescu.ion2@example.com");
         userDAO.updateUser(newUser);
         System.out.println("Updated user: " + newUser);
 
         // Test deleteUser()
-        Long deleteUserById = 2L; // Assuming there is a user with ID 2 to delete
+        Long deleteUserById = 2L; 
         userDAO.deleteUser(deleteUserById);
         System.out.println("Deleted user with ID " + deleteUserById);
     }
@@ -79,7 +79,7 @@ public class Main {
         System.out.println("Updated order: " + newOrder);
 
         // Test deleteOrder()
-        Long deleteOrderId = 2L; // Assuming there is an order with ID 2 to delete
+        Long deleteOrderId = 2L; 
         orderDAO.deleteOrder(deleteOrderId);
         System.out.println("Deleted order with ID " + deleteOrderId);
     }
