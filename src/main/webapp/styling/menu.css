@@ -1,0 +1,29 @@
+.shop-page{
+    background-image: linear-gradient(90deg,rgb(133, 255, 133), rgb(252, 252, 121),rgb(133, 255, 133));
+}
+
+.shop-title{
+    text-align: center;
+}
+.shop-subTitle{
+    text-align: center;
+}
+
+
+.search-bar{
+    margin-left: 4%;
+}
+.search-bar input{
+    width: 85%;
+  border-radius: 26px;
+  border: 1px solid #ada9a9;
+  padding: 1% 6%;
+  margin: 1% 1%;
+  background-image: url(../assets/search_icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  outline: 0;
+  background-position: 12px;
+  font-size: x-large;
+}
+/* border radius for search bar + hover/active effect */

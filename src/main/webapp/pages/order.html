@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order Form</title>
+	<link rel="stylesheet" type="text/css" href="../styling/order.css">
+    <link rel="stylesheet" type="text/css" href="../styling/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="navbar__logo">
+				<a href="welcome.html"><img src="../assets/logo.jpg" alt="Your Tea logo"></a>
+			</div>
+			<ul class="navbar__menu">
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="preferance.html">Preferance</a></li>
+				<li><a href="order.html">Order Now</a></li>
+				<li><a href="occupancy.html">About Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<section class="order-form">
+			<h2>Order Form</h2>
+			<form>
+				<fieldset>
+					<legend>Contact Information</legend>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required>
+					
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required>
+					
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone" required>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Order Details</legend>
+					<table>
+						<thead>
+							<tr>
+								<th>Item</th>
+								<th>Description</th>
+								<th>Price</th>
+								<th>Quantity</th>
+								<th>Total Price</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Green Tea</td>
+								<td>Our signature green tea</td>
+								<td>8.99 lei</td>
+								<td><input type="number" id="quantity1" name="quantity1" min="1" max="10"></td>
+								<td><span id="total1">0.00</span></td>
+							</tr>
+							<tr>
+								<td>Black Tea</td>
+								<td>A classic black tea</td>
+								<td>9.99 lei</td>
+								<td><input type="number" id="quantity2" name="quantity2" min="1" max="10"></td>
+								<td><span id="total2">0.00</span></td>
+							</tr>
+							<tr>
+								<td>Chai Tea</td>
+								<td>A spicy and sweet blend</td>
+								<td>12.99 lei</td>
+								<td><input type="number" id="quantity3" name="quantity3" min="1" max="10"></td>
+								<td><span id="total3">0.00</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</fieldset>
+				<a href="exit.html"></a><button type="submit" >Submit Order</button></a>
+			</form>
+		</section>
+	</main>
+	
+	 <footer>
+      <p>Contact Us: <a href="mailto:contact@yourtea.com">contact@yourtea.com</a></p>
+      <p>Follow Us: <a href="https://www.instagram.com/yourtea">Instagram</a></p>
+      <p>&copy; 2023 Your Tea. All Rights Reserved.</p>
+    </footer>
+	
+</body>
+</html>

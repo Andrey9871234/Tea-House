@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Tea</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <form id="teaForm">
+        <input type="hidden" id="teaId" name="teaId" value="1"> <!-- Assuming the tea ID is 1 -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="Initial Tea Name">
+        <br>
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" value="Initial Tea Description">
+        <br>
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" value="10">
+        <br>
+        <input type="submit" value="Update Tea">
+    </form>
+
+    <script>
+        $(document).ready(function() {
+            $("#teaForm").submit(function(event) {
+                event.preventDefault(); // Prevent the form from submitting normally
+
+                var teaData = {
+                    id: $("#teaId").val(),
+                    name: $("#name").val(),
+                    description: $("#description").val(),
+                    price: $("#price").val()
+                };
+
+                $.ajax({
+                    url: "/editTea", // Specify the URL of your backend servlet or API endpoint
+                    method: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify(teaData),
+                    success: function(response) {
+                        // Handle the successful response
+                        alert("Tea updated successfully!");
+                        // You can perform any additional actions or display a success message here
+                    },
+                    error: function(xhr, status, error) {
+                        // Handle the error case
+                        console.log("AJAX request error:", error);
+                        // You can display an error message or perform any error handling here
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

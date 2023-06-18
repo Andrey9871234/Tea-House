@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tea View</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="teaContainer">
+        <!-- The received tea elements will be populated here -->
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: "/viewTea", // Specify the URL of your backend servlet or API endpoint
+                method: "GET",
+                dataType: "json",
+                success: function(response) {
+                    // Handle the successful response
+                    if (response && response.length > 0) {
+                        var teaContainer = $("#teaContainer");
+
+                        // Loop through the received tea elements
+                        for (var i = 0; i < response.length; i++) {
+                            var tea = response[i];
+
+                            // Create HTML elements to display the tea information
+                            var teaDiv = $("<div>").addClass("tea");
+                            var nameElement = $("<h3>").text(tea.name);
+                            var descriptionElement = $("<p>").text(tea.description);
+                            var priceElement = $("<p>").text("Price: $" + tea.price);
+
+                            // Append the elements to the tea container
+                            teaDiv.append(nameElement, descriptionElement, priceElement);
+                            teaContainer.append(teaDiv);
+                        }
+                    } else {
+                        // Handle the case when no tea elements are received
+                        $("#teaContainer").html("No teas found.");
+                    }
+                },
+                error: function(xhr, status, error) {
+                    // Handle the error case
+                    console.log("AJAX request error:", error);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
