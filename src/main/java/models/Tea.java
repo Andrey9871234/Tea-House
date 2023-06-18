@@ -4,6 +4,7 @@ public class Tea {
     private Long id;
     private String name;
     private String description;
+     private String imageurl;
     private double price;
 
     public Tea() {
