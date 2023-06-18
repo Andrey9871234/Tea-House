@@ -69,6 +69,7 @@ The product scope of the Your Tea website is to provide an online platform for c
 ## Overall Description
 ### 2.1 Product Perspective
 The Your Tea website is an online platform that enables customers to order and purchase various types of tea products and accessories. It is a standalone system that operates independently of other systems, although it may integrate with external payment gateways to process customer transactions securely. The website is designed to be user-friendly and accessible to customers worldwide, with features such as a menu of available products, an order form, and a contact page.
+The web design for Yourtea's website incorporates HTML5, Java with servlet, AJAX, and JSON. This integration ensures optimal user experience, dynamic content generation, seamless data retrieval, and efficient data transmission. By utilizing these technologies, Yourtea's web design achieves an engaging and user-friendly online experience.
 ### 2.2 Product Functions
 The Your Tea website has several functions that include providing a menu of tea products, allowing customers to place orders, displaying information about the company, providing contact information, and offering a platform for customers to leave feedback. The website also allows customers to view their order history.
 ### 2.3 User Classes and Characteristics
@@ -110,11 +111,11 @@ This template illustrates organizing the functional requirements for the product
 ### 4.1 System Feature 1
 Feature Name: Search and Choose Tea from Menu.
 
-Description: This feature allows users to search and choose from a wide range of tea options available on the website. The user can search for a particular type of tea using keywords or browse through the menu categories. Once the user has selected a tea, they can view its description and add it to their cart. This feature ensures a smooth and easy selection process for the user.
+Description: This feature allows users to search and choose from a wide range of tea options available on the website. The user can search for a particular type of tea and other snacks through the menu categories. Once the user has selected a tea, they can view its description and add it to their cart. This feature ensures a smooth and easy selection process for the user. After the choosing the user can go to the Order page and confirm the products and the quantities of the each product.
 4.1.1   Description and Priority
  Feature Name: Search and Choose from Menu
 
-Description: This feature will allow users to search for tea items and choose from a menu of available options. Users will be able to filter their search by tea type, ingredients, and other parameters.
+Description: This feature will allow users to search for tea items and choose from a menu of available options. Users will be able to search by tea type, ingredients, and other parameters.
 
 Priority: High
 
@@ -145,11 +146,9 @@ The system shall display a menu of tea items that match the user’s search quer
 The system shall allow users to browse the menu of tea items by category, such as green tea, black tea, and herbal tea.
 The system shall display the name, price, and description of each tea item in the menu.
 The system shall allow users to add a tea item to their cart by clicking on the corresponding “Add to Cart” button.
-The system shall display an error message if the user inputs an invalid search query.
-The system shall display an error message if the user attempts to add an item to their cart without specifying the quantity.
 The system shall allow users to adjust the quantity of each tea item in their cart before submitting their order.
 The system shall display the total cost of the items in the user’s cart.
-The system shall provide a “Checkout” button for users to submit their order.
+The system shall provide a “Submit” button for users to submit their order.
 The system shall display an error message if the user attempts to checkout without specifying a valid delivery address.
 The system shall display a confirmation message with the details of the order, including the estimated delivery time and the seats allocated for the user, after the user successfully submits their order.
  
@@ -158,8 +157,8 @@ The system shall display a confirmation message with the details of the order, i
 ## Other Nonfunctional Requirements
 ### 5.1 Performance Requirements
 Response time for all user interactions should be less than 2 seconds under normal load conditions.
-The website should be able to handle up to 1000 concurrent users at any given time.
-The website should be able to handle a peak load of up to 5000 users without experiencing any downtime or significant degradation in performance.
+The website should be able to handle up to 100 concurrent users at any given time.
+The website should be able to handle a peak load of up to 500 users without experiencing any downtime or significant degradation in performance.
 The website should be able to handle a high volume of orders and payment transactions without any errors or delays.
 The website should be optimized for fast page load times and should aim to deliver a fully rendered page in under 3 seconds.
 ### 5.2 Safety Requirements
